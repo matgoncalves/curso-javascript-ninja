@@ -219,7 +219,7 @@ if (pessoa.caminhouQuantosMetros === 1) {
 
 // Agora, apresente-se ;)
 pessoa.apresentacao()
-// 'Olá, eu sou o Fulaninho de Tal, tenho 25 anos, Minha altura é 1.77m., meu peso é 90Kg e, só hoje, eu já caminhei 45 metros!'
+// 'Olá, eu sou o Fulaninho de Tal, tenho 25 anos, Minha altura é 1.77m., meu peso é 90Kg e, só hoje, eu já caminhei 35 metros!'
 
 
 ```
