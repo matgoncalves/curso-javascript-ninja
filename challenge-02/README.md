@@ -24,7 +24,8 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
 Onde VALOR é o novo valor da variável.
 */
 function troca() {
-return qualquer2 = 'O valor da variável agora é VALOR. Onde VALOR é o novo valor da variável.'
+qualquer2 = 25
+return 'O valor da variável agora é ' + qualquer2;
 }
 
 // Invoque a função criada acima.
@@ -32,8 +33,7 @@ troca()
 
 // Qual o retorno da função? (Use comentários de bloco).
 
-/*O valor da variável agora é VALOR.
-Onde VALOR é o novo valor da variável.*/
+/* O valor da variável agora é 25 */
 
 /*
 Crie uma função com as seguintes características:
@@ -43,25 +43,26 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function tresarg(x, y, z) {
-  if tresarg !== (x, y, z);
-  if else {
-    'Preencha todos os valores corretamente!'
-  } else {
-    return x * y * z + 2;
-  }
+  if (x === undefined || y === undefined || z === undefined) {
+  return 'Preencha todos os valores corretamente!';
 }
+  else {
+      return (x * y * z) + 2;    
+    }
+  }
+
 
 // Invoque a função criada acima, passando só dois números como argumento.
 tresarg(5, 10)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-//SyntaxError: Unexpected token
+//Preencha todos os valores corretamente!
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
 tresarg(5, 10, 20)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-//SyntaxError: Unexpected token
+//1002
 
 /*
 Crie uma função com as seguintes características:
@@ -72,8 +73,21 @@ Crie uma função com as seguintes características:
 5. Se nenhum argumento for passado, retorne o valor booleano `false`.
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
-?
+function newfunc(x, y, z) {
+  if (x !== undefined && y === undefined && z === undefined) {
+    return x;
+  }
+   else if (x !== undefined && y !== undefined && z === undefined) {
+    return x + y;
+  }
+  else if (x !== undefined && y !== undefined && z !== undefined){
+    return (x + y) / z;
+  }
+}
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+newfunc() // undefined
+newfunc(10) // 10
+newfunc(10, 20) // 30
+newfunc(10, 20, 30) // 1
 ```
